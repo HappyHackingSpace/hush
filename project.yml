@@ -1,0 +1,37 @@
+name: Hush
+options:
+  bundleIdPrefix: com.happyhackingspace
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+
+packages:
+  HushCore:
+    path: .
+
+targets:
+  Hush:
+    type: application
+    platform: macOS
+    sources:
+      - Sources/Hush
+      - Resources
+    dependencies:
+      - package: HushCore
+        product: HushCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.happyhackingspace.hush
+        PRODUCT_NAME: Hush
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_NSHumanReadableCopyright: "MIT, Happy Hacking Space"
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: "Hush listens to your voice to scroll your script as you speak. Audio is processed on device and never leaves your Mac."
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: "Hush matches your spoken words to your script to follow along. Recognition runs on device."
+        INFOPLIST_KEY_NSCameraUsageDescription: "Hush records your camera so you can capture takes while reading your script. Recordings are saved locally."
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_ENTITLEMENTS: Hush.entitlements
+        DEAD_CODE_STRIPPING: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

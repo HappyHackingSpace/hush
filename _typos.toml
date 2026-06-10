@@ -1,0 +1,3 @@
+# Translated content contains non-English words that the typo checker misreads.
+[files]
+extend-exclude = ["*.xcstrings"]

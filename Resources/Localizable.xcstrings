@@ -1,0 +1,72 @@
+{
+  "sourceLanguage" : "en",
+  "version" : "1.0",
+  "strings" : {
+    "Welcome to Hush" : {
+      "localizations" : {
+        "ku" : { "stringUnit" : { "state" : "translated", "value" : "Bi xêr hatî bo Hush" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Hush'a hoş geldiniz" } }
+      }
+    },
+    "An invisible teleprompter that lives in your notch. Everything runs on your Mac." : {
+      "localizations" : {
+        "ku" : { "stringUnit" : { "state" : "translated", "value" : "Suflorek nedîtbar ku di çentika te de dijî. Her tişt li ser Mac'a te dixebite." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Çentiğinizde yaşayan görünmez bir suflör. Her şey Mac'inizde çalışır." } }
+      }
+    },
+    "Get Started" : {
+      "localizations" : {
+        "ku" : { "stringUnit" : { "state" : "translated", "value" : "Dest pê bike" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Başla" } }
+      }
+    },
+    "Microphone & Speech" : {
+      "localizations" : {
+        "ku" : { "stringUnit" : { "state" : "translated", "value" : "Mîkrofon û Axaftin" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Mikrofon ve Konuşma" } }
+      }
+    },
+    "Camera" : {
+      "localizations" : {
+        "ku" : { "stringUnit" : { "state" : "translated", "value" : "Kamera" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Kamera" } }
+      }
+    },
+    "Private" : {
+      "localizations" : {
+        "ku" : { "stringUnit" : { "state" : "translated", "value" : "Taybet" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Gizli" } }
+      }
+    },
+    "Scripts" : {
+      "localizations" : {
+        "ku" : { "stringUnit" : { "state" : "translated", "value" : "Nivîs" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Metinler" } }
+      }
+    },
+    "New" : {
+      "localizations" : {
+        "ku" : { "stringUnit" : { "state" : "translated", "value" : "Nû" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Yeni" } }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "ku" : { "stringUnit" : { "state" : "translated", "value" : "Dest pê bike" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Başlat" } }
+      }
+    },
+    "Pause" : {
+      "localizations" : {
+        "ku" : { "stringUnit" : { "state" : "translated", "value" : "Rawestîne" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Duraklat" } }
+      }
+    },
+    "Quit Hush" : {
+      "localizations" : {
+        "ku" : { "stringUnit" : { "state" : "translated", "value" : "Ji Hush derkeve" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Hush'tan çık" } }
+      }
+    }
+  }
+}

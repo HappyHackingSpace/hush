@@ -1,0 +1,24 @@
+included:
+  - Sources
+  - Tests
+
+disabled_rules:
+  - todo
+
+line_length:
+  warning: 120
+  error: 160
+
+identifier_name:
+  min_length: 2
+  excluded:
+    - x
+    - y
+    - id
+
+opt_in_rules:
+  - empty_count
+  - closure_spacing
+  - explicit_init
+  - first_where
+  - sorted_imports

@@ -1,0 +1,41 @@
+{
+  "categories": [
+    {
+      "title": "## 🚀 Features",
+      "labels": ["feature", "enhancement"],
+      "rules": [{ "pattern": "(?i)^(add|support|introduce|implement|enable)", "on_property": "title", "flags": "gu" }]
+    },
+    {
+      "title": "## 🐛 Fixes",
+      "labels": ["fix", "bug"],
+      "rules": [{ "pattern": "(?i)^(fix|resolve|correct|prevent)", "on_property": "title", "flags": "gu" }]
+    },
+    {
+      "title": "## ♿ Accessibility",
+      "labels": ["accessibility", "a11y"]
+    },
+    {
+      "title": "## 🎨 Design & UI",
+      "labels": ["design", "ui"]
+    },
+    {
+      "title": "## 📝 Documentation",
+      "labels": ["documentation", "docs"],
+      "rules": [{ "pattern": "(?i)(readme|docs?|contributing)", "on_property": "title", "flags": "gu" }]
+    },
+    {
+      "title": "## 🧰 Maintenance",
+      "labels": ["chore", "ci", "dependencies"],
+      "rules": [{ "pattern": "(?i)(ci|cd|bump|dependab|workflow|lint|release)", "on_property": "title", "flags": "gu" }]
+    },
+    {
+      "title": "## 🔧 Other changes",
+      "labels": [],
+      "rules": [{ "pattern": ".+", "on_property": "title", "flags": "gu" }]
+    }
+  ],
+  "template": "#{{CHANGELOG}}\n\n**Full Changelog**: #{{RELEASE_DIFF}}",
+  "pr_template": "- #{{TITLE}} (##{{NUMBER}}) by @#{{AUTHOR}}",
+  "empty_template": "- Maintenance and internal changes only.",
+  "categorize_pr": true
+}

@@ -16,7 +16,7 @@ jobs:
   release:
     runs-on: macos-26
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - uses: maxim-lobanov/setup-xcode@v1
@@ -34,7 +34,7 @@ jobs:
           ./scripts/release.sh
       - name: Build changelog
         id: changelog
-        uses: mikepenz/release-changelog-builder-action@v5
+        uses: mikepenz/release-changelog-builder-action@v6
         with:
           fromTag: ${{ steps.tag.outputs.previous_tag }}
           toTag: ${{ steps.tag.outputs.new_tag }}

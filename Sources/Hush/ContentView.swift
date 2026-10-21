@@ -32,6 +32,7 @@ struct ContentView: View {
         .frame(minWidth: 860, minHeight: 540)
         .sheet(isPresented: $showingRecorder) {
             RecorderView(model: model)
+                .interactiveDismissDisabled(true)
         }
         .sheet(isPresented: onboardingBinding) {
             WelcomeView { onboarded = true }
@@ -350,7 +351,12 @@ private struct RecorderView: View {
                     Button("Show in Finder") { NSWorkspace.shared.activateFileViewerSelecting([url]) }
                 }
                 Spacer()
-                Button("Done") { dismiss() }
+                Button("Done") {
+                    if recording.isRecording { recording.toggleRecording() }
+                    recording.stopSession()
+                    model.captions.stop()
+                    dismiss()
+                }
             }
         }
         .padding(20)
@@ -361,11 +367,6 @@ private struct RecorderView: View {
         }
         .onChange(of: captionsOn) { _, isOn in
             Task { if isOn { await model.captions.start() } else { model.captions.stop() } }
-        }
-        .onDisappear {
-            if recording.isRecording { recording.toggleRecording() }
-            recording.stopSession()
-            model.captions.stop()
         }
     }
 }

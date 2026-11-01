@@ -60,6 +60,10 @@ After that it opens normally.
 Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to build, test, and
 submit changes.
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=HappyHackingSpace/hush&type=Date)](https://star-history.com/#HappyHackingSpace/hush&Date)
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
